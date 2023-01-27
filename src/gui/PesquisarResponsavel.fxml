@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="822.0" styleClass="imagemAcimaTabela" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controles.PesquisarResponsavel">
+   <children>
+      <TableView fx:id="TabelaResponsavel" layoutX="-3.0" layoutY="261.0" onKeyPressed="#MoverTabela" onMouseClicked="#clikarNatabela" prefHeight="359.0" prefWidth="828.0" />
+      <Button fx:id="IconNovoResponsavel" layoutX="653.0" layoutY="169.0" mnemonicParsing="false" onAction="#AcaoCadastrarNovo" styleClass="Button" text="Novo Responsavel" />
+      <Button fx:id="IconEditarResponsavel" layoutX="445.0" layoutY="218.0" mnemonicParsing="false" onAction="#AcaoEditarResponsavel" styleClass="Button" text=" Editar Responsavel" />
+      <Button fx:id="IconExcluirResponsavel" layoutX="650.0" layoutY="218.0" mnemonicParsing="false" onAction="#AcaoExcluirResponsavel" styleClass="Button" text="Excluir Responsavel" />
+      <Label layoutX="64.0" layoutY="23.0" text="Cpf do paciente " textFill="#f2ecec">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="62.0" layoutY="89.0" text=" Cpf da pessoa fisica" textFill="#f2ecec">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label layoutX="48.0" layoutY="149.0" text="cnpj da pessoa juridaca" textFill="#fffdfd">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="278.0" layoutY="5.0" text="Pesquisar Responsavel" textFill="#fff8f8">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label layoutX="552.0" layoutY="66.0" text="Pesquisar Responsavel" textFill="#fffefe">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TextField fx:id="PesquisarPaciente" alignment="CENTER" layoutX="505.0" layoutY="98.0" onKeyPressed="#filtrarRegistro" prefHeight="25.0" prefWidth="245.0" promptText="digite o cpf" styleClass="Button" />
+      <TextField fx:id="AtualiazarCpfPaciente" layoutX="9.0" layoutY="54.0" prefHeight="25.0" prefWidth="212.0" styleClass="Button" />
+      <TextField fx:id="AtualiazarCpfPessoaFisica" layoutX="17.0" layoutY="117.0" prefHeight="25.0" prefWidth="203.0" styleClass="Button" />
+      <TextField fx:id="AtualiazarCnpjPessoaJuridica" layoutX="17.0" layoutY="182.0" prefHeight="25.0" prefWidth="203.0" styleClass="Button" />
+      <RadioButton fx:id="IdRadioPF" layoutX="12.0" layoutY="223.0" mnemonicParsing="false" text="Pessoa Fisica" textFill="#fffefe">
+         <toggleGroup>
+            <ToggleGroup fx:id="grupo2" />
+         </toggleGroup>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="IconTabelaResponsavel" layoutX="442.0" layoutY="169.0" mnemonicParsing="false" onAction="#AcaoAtualiazarTabela" prefHeight="25.0" prefWidth="125.0" styleClass="Button" text="Atualizar tabela" />
+      <RadioButton fx:id="IdRadioPj" layoutX="142.0" layoutY="223.0" mnemonicParsing="false" text="Pessoa Juridica" textFill="#fffbfb" toggleGroup="$grupo2">
+         <font>
+            <Font size="14.0" />
+         </font></RadioButton>
+      <ImageView fitHeight="55.0" fitWidth="200.0" layoutX="727.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/Logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

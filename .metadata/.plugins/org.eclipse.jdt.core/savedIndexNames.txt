@@ -1,0 +1,10 @@
+INDEX VERSION 1.131+C:\Users\User\Desktop\votacao\.metadata\.plugins\org.eclipse.jdt.core
+4286601780.index
+3515310832.index
+1440596195.index
+184123570.index
+1452167513.index
+3838006238.index
+1865797976.index
+2935516124.index
+461797858.index

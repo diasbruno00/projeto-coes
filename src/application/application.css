@@ -1,0 +1,32 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx -Property */
+
+
+
+.imagemPrincipal{
+	 -fx-background-image:url('../imagens/LoginPrinciapal.jpeg');
+	 -fx-background-size:  cover ;
+}
+
+
+.imagemCadastro{
+	 -fx-background-image:url('../imagens/Cadastro.jpeg');
+	 -fx-background-size:  100% 100% ;
+}
+
+.imagemLogin{
+	 -fx-background-image:url('../imagens/Login.jpeg');
+	 -fx-background-size:  100% 100% ;
+}
+
+.imagemAcimaTabela{
+	 -fx-background-image:url('../imagens/TelaAcima.jpeg');
+	 -fx-background-size:  100% 100% ;
+}
+
+.Button{
+	-fx-background-radius: 10px;
+	-fx-background-color: #F2E6A7;
+	
+}
+
+}

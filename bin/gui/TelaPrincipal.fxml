@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0" prefWidth="649.0" styleClass="imagemPrincipal" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controles.TelaPrincipal">
+   <children>
+      <MenuBar layoutX="-3.0" prefHeight="32.0" prefWidth="655.0" style="-fx-background-radius: 5; -fx-background-color: #ddd9ce;" stylesheets="@../application/application.css" AnchorPane.rightAnchor="-3.0">
+        <menus>
+          <Menu fx:id="IdClientes" mnemonicParsing="false" text="Clientes">
+            <items>
+                  <MenuItem fx:id="IdPesquisarCliente" mnemonicParsing="false" onAction="#AcaoPesquisarCliente" text="Pessoa Fisica" />
+                  <MenuItem fx:id="IdPesquisarPessoaJuridica" mnemonicParsing="false" onAction="#AcaoPesquisarPessoaJuridica" text="Pessoa Juridica" />
+            </items>
+          </Menu>
+          <Menu fx:id="IdPacientes" mnemonicParsing="false" text="Pacientes">
+            <items>
+                  <MenuItem fx:id="IdPesquisarPaciente" mnemonicParsing="false" onAction="#AcaoPesquisarPaciente" text="Pesquisar Paciente" />
+            </items>
+          </Menu>
+          <Menu fx:id="IdEntrevista" mnemonicParsing="false" text="Agendar Entrevistas">
+            <items>
+                  <MenuItem fx:id="IdPesquisarEntrevista" mnemonicParsing="false" onAction="#AcaoPesquisarEntrevista" text="Pesquisar Entrevista" />
+            </items>
+          </Menu>
+            <Menu fx:id="IdEntrevistador" mnemonicParsing="false" onAction="#AcaoPesquisarEntrevistador" text="Entrevistadores">
+               <items>
+                  <MenuItem fx:id="IdPesquisarEntrevistador" mnemonicParsing="false" text="Pesquisar Entrevistador" />
+               </items>
+            </Menu>
+            <Menu fx:id="IdOutrasFuncionalidades" mnemonicParsing="false" text="Outras Pesquisas">
+               <items>
+                  <MenuItem fx:id="IdPesquisarResponsavel" mnemonicParsing="false" onAction="#AcaoPesquisarResponsavel" text="Pesquisar Responsavel" />
+                  <MenuItem fx:id="IdPesquisarCordenador" mnemonicParsing="false" onAction="#AcaoPesquisarCordenador" text="Pesquisar Cordenador" />
+                  <MenuItem fx:id="IdPesquisarEntrevistado" mnemonicParsing="false" onAction="#AcaoPesquisarEntrevistado" text="Pesquisar Entrevistado" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="113.0" layoutY="293.0" prefHeight="35.0" prefWidth="606.0" text="Bem - Vindo ao Sistema de Gestão de " textFill="#fffefe">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="103.0" layoutY="328.0" text="Atendimento ao cliente da Startup COES" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="219.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/Logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

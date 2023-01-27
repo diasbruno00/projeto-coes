@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="571.0" prefWidth="824.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controles.PesquisarPessoaFisica">
+   <children>
+      <AnchorPane layoutX="-1.0" prefHeight="252.0" prefWidth="824.0" styleClass="imagemAcimaTabela" stylesheets="@../application/application.css">
+         <children>
+            <TextField fx:id="IdPesquisarDados" alignment="CENTER" layoutX="453.0" layoutY="93.0" onKeyPressed="#filtrarRegistro" prefHeight="25.0" prefWidth="293.0" promptText="Digite o CPF" styleClass="Button" />
+            <Button fx:id="ExcluirImagem" layoutX="664.0" layoutY="198.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="27.0" prefWidth="92.0" styleClass="Button" text="Excluir PF" />
+            <Button fx:id="NovoImagem" layoutX="664.0" layoutY="153.0" mnemonicParsing="false" onAction="#CadastroNovoFuncionario" prefHeight="27.0" prefWidth="92.0" styleClass="Button" text="Novo PF" />
+            <Button fx:id="editarImagem" layoutX="453.0" layoutY="198.0" mnemonicParsing="false" onAction="#SalvarEdicao" prefHeight="27.0" prefWidth="92.0" styleClass="Button" text="Editar PF" />
+            <Label layoutX="18.0" layoutY="142.0" text="Email" textFill="#e8e2e2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="4.0" layoutY="181.0" text="Telefone" textFill="#fffefe">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <TextField fx:id="Dados" layoutX="66.0" layoutY="59.0" prefHeight="25.0" prefWidth="279.0" styleClass="Button" />
+            <TextField fx:id="SetCPF" layoutX="66.0" layoutY="106.0" prefHeight="25.0" prefWidth="279.0" styleClass="Button" />
+            <TextField fx:id="SetEndereco" layoutX="66.0" layoutY="141.0" prefHeight="25.0" prefWidth="279.0" styleClass="Button" />
+            <TextField fx:id="SetNumero" layoutX="69.0" layoutY="178.0" prefHeight="25.0" prefWidth="279.0" styleClass="Button" />
+            <TextField fx:id="SetCidade" layoutX="140.0" layoutY="213.0" prefHeight="25.0" prefWidth="208.0" styleClass="Button" />
+            <Label layoutX="8.0" layoutY="214.0" text="Cidade Residencial" textFill="#ebe8e8">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Button fx:id="tabelaImagem" layoutX="453.0" layoutY="152.0" mnemonicParsing="false" onAction="#CarregarTabela" styleClass="Button" text="Atualizar Tabela" />
+            <ImageView fitHeight="52.0" fitWidth="92.0" layoutX="732.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/Logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="11.0" layoutY="61.0" text="Nome" textFill="#fffdfd">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="107.0" text="CPF" textFill="#f5f2f2" />
+            <Label layoutX="538.0" layoutY="71.0" text="Pesquisar Pessoa Fisica" textFill="#fffbfb">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="290.0" layoutY="12.0" text="Pesquisar Pessoa Fisica" textFill="#eeeaea">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="Tabela" layoutX="-4.0" layoutY="252.0" onKeyPressed="#MoverTabela" onMouseClicked="#ClicarNaTabela" prefHeight="319.0" prefWidth="824.0" />
+   </children>
+</AnchorPane>

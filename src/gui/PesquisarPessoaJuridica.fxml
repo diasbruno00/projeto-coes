@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="842.0" styleClass="imagemAcimaTabela" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controles.PesquisarPessoaJuridica">
+   <children>
+      <TableView fx:id="TabelaPessoaJuridica" layoutX="-1.0" layoutY="266.0" onKeyPressed="#moverTabela" onMouseClicked="#clikarNaTabela" prefHeight="364.0" prefWidth="842.0" />
+      <Button fx:id="EditarPFicon" layoutX="466.0" layoutY="209.0" mnemonicParsing="false" onAction="#SalvarEdicaoPj" prefHeight="25.0" prefWidth="101.0" styleClass="Button" text="Editar PJ" />
+      <Button fx:id="novoPJicon" layoutX="686.0" layoutY="164.0" mnemonicParsing="false" onAction="#cadastrarNovoPj" prefHeight="25.0" prefWidth="101.0" styleClass="Button" text="Novo  PJ" />
+      <Button fx:id="ExcluirPJicon" layoutX="686.0" layoutY="209.0" mnemonicParsing="false" onAction="#ExcluirPj" prefHeight="25.0" prefWidth="101.0" styleClass="Button" text="Excluir PJ" />
+      <TextField fx:id="AtualizarNome" layoutX="85.0" layoutY="60.0" prefHeight="25.0" prefWidth="231.0" styleClass="Button" />
+      <TextField fx:id="AtualizarCNPJ" layoutX="85.0" layoutY="106.0" prefHeight="25.0" prefWidth="231.0" styleClass="Button" />
+      <TextField fx:id="AtualizarEndereco" layoutX="95.0" layoutY="142.0" prefHeight="25.0" prefWidth="221.0" styleClass="Button" />
+      <Label layoutX="11.0" layoutY="62.0" text="Nome" textFill="#eeebeb">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="16.0" layoutY="105.0" text="Cnpj" textFill="#fffbfb">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="15.0" layoutY="144.0" text="Email" textFill="#fffafa">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="242.0" layoutY="6.0" text="Pesquisar Pessoa Juridica" textFill="#f8f7f7">
+         <font>
+            <Font name="System Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="574.0" layoutY="75.0" text="Pesquisar PJ" textFill="#eeeded">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TextField fx:id="PesquisarNome" alignment="CENTER" layoutX="466.0" layoutY="106.0" onKeyPressed="#filtrarRegistro" prefHeight="25.0" prefWidth="302.0" promptText="Digite o cpnj" styleClass="Button" />
+      <Button fx:id="AtuaalizarImagemIcon" layoutX="466.0" layoutY="164.0" mnemonicParsing="false" onAction="#AtualizarTabela" styleClass="Button" text="Atualizar Tabela" />
+      <Label layoutX="5.0" layoutY="186.0" text="     Telefone" textFill="#fffdfd">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="13.0" layoutY="229.0" text="Cidade Residente" textFill="#fffdfd">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TextField fx:id="AtualizarNumero" layoutX="135.0" layoutY="184.0" prefHeight="25.0" prefWidth="178.0" styleClass="Button" />
+      <TextField fx:id="AtualizarCidade" layoutX="135.0" layoutY="227.0" prefHeight="25.0" prefWidth="178.0" styleClass="Button" />
+      <ImageView fitHeight="54.0" fitWidth="94.0" layoutX="745.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/Logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
